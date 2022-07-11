@@ -1,14 +1,39 @@
 // This is auto-generated. DO NOT EDIT.
 
-// Soong config variable stanza added by vendor/google/build/mainline_modules_sdks.py.
-soong_config_module_type_import {
-    from: "packages/modules/common/Android.bp",
-    module_types: [
-        "module_java_import",
-        "module_java_sdk_library_import",
-        "module_prebuilt_bootclasspath_fragment",
-        "module_prebuilt_systemserverclasspath_fragment",
-    ],
+// Soong config variable module type added by vendor/google/build/mainline_modules_sdks.py.
+soong_config_module_type {
+    name: "uwb_prebuilt_java_import",
+    module_type: "java_import",
+    config_namespace: "uwb_module",
+    bool_variables: ["source_build"],
+    properties: ["prefer"],
+}
+
+// Soong config variable module type added by vendor/google/build/mainline_modules_sdks.py.
+soong_config_module_type {
+    name: "uwb_prebuilt_java_sdk_library_import",
+    module_type: "java_sdk_library_import",
+    config_namespace: "uwb_module",
+    bool_variables: ["source_build"],
+    properties: ["prefer"],
+}
+
+// Soong config variable module type added by vendor/google/build/mainline_modules_sdks.py.
+soong_config_module_type {
+    name: "uwb_prebuilt_prebuilt_bootclasspath_fragment",
+    module_type: "prebuilt_bootclasspath_fragment",
+    config_namespace: "uwb_module",
+    bool_variables: ["source_build"],
+    properties: ["prefer"],
+}
+
+// Soong config variable module type added by vendor/google/build/mainline_modules_sdks.py.
+soong_config_module_type {
+    name: "uwb_prebuilt_prebuilt_systemserverclasspath_fragment",
+    module_type: "prebuilt_systemserverclasspath_fragment",
+    config_namespace: "uwb_module",
+    bool_variables: ["source_build"],
+    properties: ["prefer"],
 }
 
 package {
@@ -40,12 +65,12 @@ prebuilt_bootclasspath_fragment {
     },
 }
 
-module_prebuilt_bootclasspath_fragment {
+uwb_prebuilt_prebuilt_bootclasspath_fragment {
     name: "com.android.uwb-bootclasspath-fragment",
-    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "uwb_module" is true.
     prefer: true,
     soong_config_variables: {
-        module_build_from_source: {
+        source_build: {
             prefer: false,
         },
     },
@@ -106,12 +131,12 @@ java_sdk_library_import {
     },
 }
 
-module_java_sdk_library_import {
+uwb_prebuilt_java_sdk_library_import {
     name: "framework-uwb",
-    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "uwb_module" is true.
     prefer: true,
     soong_config_variables: {
-        module_build_from_source: {
+        source_build: {
             prefer: false,
         },
     },
@@ -162,12 +187,12 @@ java_import {
     jars: ["java_systemserver_libs/snapshot/jars/are/invalid/service-uwb.jar"],
 }
 
-module_java_import {
+uwb_prebuilt_java_import {
     name: "service-uwb",
-    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "uwb_module" is true.
     prefer: true,
     soong_config_variables: {
-        module_build_from_source: {
+        source_build: {
             prefer: false,
         },
     },
@@ -205,12 +230,12 @@ prebuilt_systemserverclasspath_fragment {
     standalone_contents: ["uwb-module-sdk_service-uwb@current"],
 }
 
-module_prebuilt_systemserverclasspath_fragment {
+uwb_prebuilt_prebuilt_systemserverclasspath_fragment {
     name: "com.android.uwb-systemserverclasspath-fragment",
-    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "uwb_module" is true.
     prefer: true,
     soong_config_variables: {
-        module_build_from_source: {
+        source_build: {
             prefer: false,
         },
     },
