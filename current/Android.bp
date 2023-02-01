@@ -1,55 +1,17 @@
 // This is auto-generated. DO NOT EDIT.
 
-// Soong config variable module type added by vendor/google/build/mainline_modules_sdks.py.
-soong_config_module_type {
-    name: "uwb_prebuilt_java_import",
-    module_type: "java_import",
-    config_namespace: "uwb_module",
-    bool_variables: ["source_build"],
-    properties: ["prefer"],
-}
-
-// Soong config variable module type added by vendor/google/build/mainline_modules_sdks.py.
-soong_config_module_type {
-    name: "uwb_prebuilt_java_sdk_library_import",
-    module_type: "java_sdk_library_import",
-    config_namespace: "uwb_module",
-    bool_variables: ["source_build"],
-    properties: ["prefer"],
-}
-
-// Soong config variable module type added by vendor/google/build/mainline_modules_sdks.py.
-soong_config_module_type {
-    name: "uwb_prebuilt_prebuilt_bootclasspath_fragment",
-    module_type: "prebuilt_bootclasspath_fragment",
-    config_namespace: "uwb_module",
-    bool_variables: ["source_build"],
-    properties: ["prefer"],
-}
-
-// Soong config variable module type added by vendor/google/build/mainline_modules_sdks.py.
-soong_config_module_type {
-    name: "uwb_prebuilt_prebuilt_systemserverclasspath_fragment",
-    module_type: "prebuilt_systemserverclasspath_fragment",
-    config_namespace: "uwb_module",
-    bool_variables: ["source_build"],
-    properties: ["prefer"],
-}
-
 package {
     // A default list here prevents the license LSC from adding its own list which would
     // be unnecessary as every module in the sdk already has its own licenses property.
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
-uwb_prebuilt_prebuilt_bootclasspath_fragment {
+prebuilt_bootclasspath_fragment {
     name: "com.android.uwb-bootclasspath-fragment",
     // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "uwb_module" is true.
-    prefer: true,
-    soong_config_variables: {
-        source_build: {
-            prefer: false,
-        },
+    use_source_config_var: {
+        config_namespace: "uwb_module",
+        var_name: "source_build",
     },
     visibility: ["//packages/modules/Uwb:__subpackages__"],
     apex_available: ["com.android.uwb"],
@@ -71,14 +33,12 @@ uwb_prebuilt_prebuilt_bootclasspath_fragment {
     },
 }
 
-uwb_prebuilt_java_sdk_library_import {
+java_sdk_library_import {
     name: "framework-uwb",
     // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "uwb_module" is true.
-    prefer: true,
-    soong_config_variables: {
-        source_build: {
-            prefer: false,
-        },
+    use_source_config_var: {
+        config_namespace: "uwb_module",
+        var_name: "source_build",
     },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.uwb"],
@@ -114,19 +74,19 @@ uwb_prebuilt_java_sdk_library_import {
     },
 }
 
-uwb_prebuilt_java_import {
+java_import {
     name: "service-uwb",
     // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "uwb_module" is true.
-    prefer: true,
-    soong_config_variables: {
-        source_build: {
-            prefer: false,
-        },
+    use_source_config_var: {
+        config_namespace: "uwb_module",
+        var_name: "source_build",
     },
     visibility: [
         "//packages/modules/Uwb/apex",
         "//packages/modules/Uwb/service",
         "//packages/modules/Uwb/service/tests/uwbtests/apex",
+        "//packages/modules/Uwb/indev_uwb_adaptation",
+        "//packages/modules/Uwb/indev_uwb_adaptation/tests",
     ],
     apex_available: ["com.android.uwb"],
     licenses: ["uwb-module-sdk_Android-Apache-2.0"],
@@ -140,14 +100,12 @@ license {
     license_text: ["licenses/build/soong/licenses/LICENSE"],
 }
 
-uwb_prebuilt_prebuilt_systemserverclasspath_fragment {
+prebuilt_systemserverclasspath_fragment {
     name: "com.android.uwb-systemserverclasspath-fragment",
     // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "uwb_module" is true.
-    prefer: true,
-    soong_config_variables: {
-        source_build: {
-            prefer: false,
-        },
+    use_source_config_var: {
+        config_namespace: "uwb_module",
+        var_name: "source_build",
     },
     visibility: ["//packages/modules/Uwb:__subpackages__"],
     apex_available: ["com.android.uwb"],
