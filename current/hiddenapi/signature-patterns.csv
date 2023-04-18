@@ -6,6 +6,7 @@ android/uwb/DistanceMeasurement
 android/uwb/IUwbAdapter
 android/uwb/IUwbAdapterStateCallbacks
 android/uwb/IUwbAdfProvisionStateCallbacks
+android/uwb/IUwbOemExtensionCallback
 android/uwb/IUwbRangingCallbacks
 android/uwb/IUwbVendorUciCallback
 android/uwb/MeasurementStatus
@@ -19,5 +20,7 @@ android/uwb/StateChangeReason
 android/uwb/UwbAddress
 android/uwb/UwbFrameworkInitializer
 android/uwb/UwbManager
+android/uwb/UwbOemExtensionCallbackListener
 android/uwb/UwbVendorUciCallbackListener
+android/uwb/util/**
 com/android/x/**
