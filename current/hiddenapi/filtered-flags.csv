@@ -269,7 +269,8 @@ Landroid/uwb/UwbManager;->unregisterAdapterStateCallback(Landroid/uwb/UwbManager
 Landroid/uwb/UwbManager;->unregisterUwbVendorUciCallback(Landroid/uwb/UwbManager$UwbVendorUciCallback;)V,sdk,system-api,test-api
 Landroid/uwb/UwbOemExtensionCallbackListener$$ExternalSyntheticLambda0;->call()Ljava/lang/Object;,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/uwb/UwbOemExtensionCallbackListener$$ExternalSyntheticLambda1;->run()V,core-platform-api,public-api,sdk,system-api,test-api
-Landroid/uwb/UwbOemExtensionCallbackListener$$ExternalSyntheticLambda2;->run()V,core-platform-api,public-api,sdk,system-api,test-api
-Landroid/uwb/UwbOemExtensionCallbackListener$$ExternalSyntheticLambda3;->call()Ljava/lang/Object;,core-platform-api,public-api,sdk,system-api,test-api
+Landroid/uwb/UwbOemExtensionCallbackListener$$ExternalSyntheticLambda2;->call()Ljava/lang/Object;,core-platform-api,public-api,sdk,system-api,test-api
+Landroid/uwb/UwbOemExtensionCallbackListener$$ExternalSyntheticLambda3;->run()V,core-platform-api,public-api,sdk,system-api,test-api
+Landroid/uwb/UwbOemExtensionCallbackListener$$ExternalSyntheticLambda4;->call()Ljava/lang/Object;,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/uwb/UwbVendorUciCallbackListener$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/uwb/UwbVendorUciCallbackListener$$ExternalSyntheticLambda1;->run()V,core-platform-api,public-api,sdk,system-api,test-api
