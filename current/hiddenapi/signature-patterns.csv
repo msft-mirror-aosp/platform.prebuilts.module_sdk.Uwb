@@ -3,9 +3,11 @@ android/uwb/AdapterStateListener
 android/uwb/AngleMeasurement
 android/uwb/AngleOfArrivalMeasurement
 android/uwb/DistanceMeasurement
+android/uwb/IOnUwbActivityEnergyInfoListener
 android/uwb/IUwbAdapter
 android/uwb/IUwbAdapterStateCallbacks
 android/uwb/IUwbAdfProvisionStateCallbacks
+android/uwb/IUwbOemExtensionCallback
 android/uwb/IUwbRangingCallbacks
 android/uwb/IUwbVendorUciCallback
 android/uwb/MeasurementStatus
@@ -16,8 +18,11 @@ android/uwb/RangingReport
 android/uwb/RangingSession
 android/uwb/SessionHandle
 android/uwb/StateChangeReason
+android/uwb/UwbActivityEnergyInfo
 android/uwb/UwbAddress
 android/uwb/UwbFrameworkInitializer
 android/uwb/UwbManager
+android/uwb/UwbOemExtensionCallbackListener
 android/uwb/UwbVendorUciCallbackListener
+android/uwb/util/**
 com/android/x/**
