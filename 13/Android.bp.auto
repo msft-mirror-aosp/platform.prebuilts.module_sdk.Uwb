@@ -13,6 +13,11 @@ apex_contributions_defaults {
 
 prebuilt_bootclasspath_fragment {
     name: "com.android.uwb-bootclasspath-fragment",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "uwb_module" is true.
+    use_source_config_var: {
+        config_namespace: "uwb_module",
+        var_name: "source_build",
+    },
     visibility: ["//packages/modules/Uwb:__subpackages__"],
     apex_available: ["com.android.uwb"],
     licenses: ["uwb-module-sdk_Android-Apache-2.0"],
@@ -35,6 +40,11 @@ prebuilt_bootclasspath_fragment {
 
 java_sdk_library_import {
     name: "framework-uwb",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "uwb_module" is true.
+    use_source_config_var: {
+        config_namespace: "uwb_module",
+        var_name: "source_build",
+    },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.uwb"],
     licenses: ["uwb-module-sdk_Android-Apache-2.0"],
@@ -72,6 +82,11 @@ java_sdk_library_import {
 
 java_import {
     name: "service-uwb",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "uwb_module" is true.
+    use_source_config_var: {
+        config_namespace: "uwb_module",
+        var_name: "source_build",
+    },
     visibility: [
         "//packages/modules/Uwb/apex",
         "//packages/modules/Uwb/service",
@@ -92,6 +107,11 @@ license {
 
 prebuilt_systemserverclasspath_fragment {
     name: "com.android.uwb-systemserverclasspath-fragment",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "uwb_module" is true.
+    use_source_config_var: {
+        config_namespace: "uwb_module",
+        var_name: "source_build",
+    },
     visibility: ["//packages/modules/Uwb:__subpackages__"],
     apex_available: ["com.android.uwb"],
     licenses: ["uwb-module-sdk_Android-Apache-2.0"],
