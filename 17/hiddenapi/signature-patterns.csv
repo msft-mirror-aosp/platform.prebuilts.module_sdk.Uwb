@@ -18,6 +18,7 @@ android/ranging/SessionConfig
 android/ranging/SessionHandle
 android/ranging/ble/cs/BleCsRangingCapabilities
 android/ranging/ble/cs/BleCsRangingParams
+android/ranging/ble/rssi/BleRssiRangingCapabilities
 android/ranging/ble/rssi/BleRssiRangingParams
 android/ranging/oob/DeviceHandle
 android/ranging/oob/IOobSendDataListener

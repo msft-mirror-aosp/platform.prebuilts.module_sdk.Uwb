@@ -202,6 +202,11 @@ Landroid/ranging/ble/cs/BleCsRangingParams;->getRangingUpdateRate()I,public-api,
 Landroid/ranging/ble/cs/BleCsRangingParams;->getSecurityLevel()I,public-api,system-api,test-api
 Landroid/ranging/ble/cs/BleCsRangingParams;->getSightType()I,public-api,system-api,test-api
 Landroid/ranging/ble/cs/BleCsRangingParams;->writeToParcel(Landroid/os/Parcel;I)V,public-api,system-api,test-api
+Landroid/ranging/ble/rssi/BleRssiRangingCapabilities$1;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,system-api,test-api
+Landroid/ranging/ble/rssi/BleRssiRangingCapabilities$1;->newArray(I)[Ljava/lang/Object;,public-api,system-api,test-api
+Landroid/ranging/ble/rssi/BleRssiRangingCapabilities;->describeContents()I,public-api,system-api,test-api
+Landroid/ranging/ble/rssi/BleRssiRangingCapabilities;->toString()Ljava/lang/String;,core-platform-api,public-api,system-api,test-api
+Landroid/ranging/ble/rssi/BleRssiRangingCapabilities;->writeToParcel(Landroid/os/Parcel;I)V,public-api,system-api,test-api
 Landroid/ranging/ble/rssi/BleRssiRangingParams$1;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,system-api,test-api
 Landroid/ranging/ble/rssi/BleRssiRangingParams$1;->newArray(I)[Ljava/lang/Object;,public-api,system-api,test-api
 Landroid/ranging/ble/rssi/BleRssiRangingParams$Builder;-><init>(Ljava/lang/String;)V,public-api,system-api,test-api
