@@ -12,9 +12,11 @@ Landroid/ranging/DataNotificationConfig;->NOTIFICATION_CONFIG_ENABLE:I,public-ap
 Landroid/ranging/DataNotificationConfig;->NOTIFICATION_CONFIG_PROXIMITY_EDGE:I,public-api,system-api,test-api
 Landroid/ranging/DataNotificationConfig;->NOTIFICATION_CONFIG_PROXIMITY_LEVEL:I,public-api,system-api,test-api
 Landroid/ranging/DataNotificationConfig;->describeContents()I,public-api,system-api,test-api
+Landroid/ranging/DataNotificationConfig;->equals(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/DataNotificationConfig;->getNotificationConfigType()I,public-api,system-api,test-api
 Landroid/ranging/DataNotificationConfig;->getProximityFarCm()I,public-api,system-api,test-api
 Landroid/ranging/DataNotificationConfig;->getProximityNearCm()I,public-api,system-api,test-api
+Landroid/ranging/DataNotificationConfig;->hashCode()I,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/DataNotificationConfig;->toString()Ljava/lang/String;,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/DataNotificationConfig;->writeToParcel(Landroid/os/Parcel;I)V,public-api,system-api,test-api
 Landroid/ranging/IRangingAdapter$Default;->asBinder()Landroid/os/IBinder;,public-api,system-api,test-api
@@ -145,6 +147,8 @@ Landroid/ranging/SensorFusionParams$Builder;->build()Landroid/ranging/SensorFusi
 Landroid/ranging/SensorFusionParams$Builder;->setSensorFusionEnabled(Z)Landroid/ranging/SensorFusionParams$Builder;,public-api,system-api,test-api
 Landroid/ranging/SensorFusionParams;->CREATOR:Landroid/os/Parcelable$Creator;,public-api,system-api,test-api
 Landroid/ranging/SensorFusionParams;->describeContents()I,public-api,system-api,test-api
+Landroid/ranging/SensorFusionParams;->equals(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
+Landroid/ranging/SensorFusionParams;->hashCode()I,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/SensorFusionParams;->isSensorFusionEnabled()Z,public-api,system-api,test-api
 Landroid/ranging/SensorFusionParams;->toString()Ljava/lang/String;,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/SensorFusionParams;->writeToParcel(Landroid/os/Parcel;I)V,public-api,system-api,test-api
@@ -158,9 +162,11 @@ Landroid/ranging/SessionConfig$Builder;->setRangingMeasurementsLimit(I)Landroid/
 Landroid/ranging/SessionConfig$Builder;->setSensorFusionParams(Landroid/ranging/SensorFusionParams;)Landroid/ranging/SessionConfig$Builder;,public-api,system-api,test-api
 Landroid/ranging/SessionConfig;->CREATOR:Landroid/os/Parcelable$Creator;,public-api,system-api,test-api
 Landroid/ranging/SessionConfig;->describeContents()I,public-api,system-api,test-api
+Landroid/ranging/SessionConfig;->equals(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/SessionConfig;->getDataNotificationConfig()Landroid/ranging/DataNotificationConfig;,public-api,system-api,test-api
 Landroid/ranging/SessionConfig;->getRangingMeasurementsLimit()I,public-api,system-api,test-api
 Landroid/ranging/SessionConfig;->getSensorFusionParams()Landroid/ranging/SensorFusionParams;,public-api,system-api,test-api
+Landroid/ranging/SessionConfig;->hashCode()I,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/SessionConfig;->isAngleOfArrivalNeeded()Z,public-api,system-api,test-api
 Landroid/ranging/SessionConfig;->toString()Ljava/lang/String;,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/SessionConfig;->writeToParcel(Landroid/os/Parcel;I)V,public-api,system-api,test-api
@@ -196,11 +202,13 @@ Landroid/ranging/ble/cs/BleCsRangingParams;->SIGHT_TYPE_LINE_OF_SIGHT:I,public-a
 Landroid/ranging/ble/cs/BleCsRangingParams;->SIGHT_TYPE_NON_LINE_OF_SIGHT:I,public-api,system-api,test-api
 Landroid/ranging/ble/cs/BleCsRangingParams;->SIGHT_TYPE_UNKNOWN:I,public-api,system-api,test-api
 Landroid/ranging/ble/cs/BleCsRangingParams;->describeContents()I,public-api,system-api,test-api
+Landroid/ranging/ble/cs/BleCsRangingParams;->equals(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/ble/cs/BleCsRangingParams;->getLocationType()I,public-api,system-api,test-api
 Landroid/ranging/ble/cs/BleCsRangingParams;->getPeerBluetoothAddress()Ljava/lang/String;,public-api,system-api,test-api
 Landroid/ranging/ble/cs/BleCsRangingParams;->getRangingUpdateRate()I,public-api,system-api,test-api
 Landroid/ranging/ble/cs/BleCsRangingParams;->getSecurityLevel()I,public-api,system-api,test-api
 Landroid/ranging/ble/cs/BleCsRangingParams;->getSightType()I,public-api,system-api,test-api
+Landroid/ranging/ble/cs/BleCsRangingParams;->hashCode()I,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/ble/cs/BleCsRangingParams;->writeToParcel(Landroid/os/Parcel;I)V,public-api,system-api,test-api
 Landroid/ranging/ble/rssi/BleRssiRangingCapabilities$1;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,system-api,test-api
 Landroid/ranging/ble/rssi/BleRssiRangingCapabilities$1;->newArray(I)[Ljava/lang/Object;,public-api,system-api,test-api
@@ -214,8 +222,10 @@ Landroid/ranging/ble/rssi/BleRssiRangingParams$Builder;->build()Landroid/ranging
 Landroid/ranging/ble/rssi/BleRssiRangingParams$Builder;->setRangingUpdateRate(I)Landroid/ranging/ble/rssi/BleRssiRangingParams$Builder;,public-api,system-api,test-api
 Landroid/ranging/ble/rssi/BleRssiRangingParams;->CREATOR:Landroid/os/Parcelable$Creator;,public-api,system-api,test-api
 Landroid/ranging/ble/rssi/BleRssiRangingParams;->describeContents()I,public-api,system-api,test-api
+Landroid/ranging/ble/rssi/BleRssiRangingParams;->equals(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/ble/rssi/BleRssiRangingParams;->getPeerBluetoothAddress()Ljava/lang/String;,public-api,system-api,test-api
 Landroid/ranging/ble/rssi/BleRssiRangingParams;->getRangingUpdateRate()I,public-api,system-api,test-api
+Landroid/ranging/ble/rssi/BleRssiRangingParams;->hashCode()I,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/ble/rssi/BleRssiRangingParams;->writeToParcel(Landroid/os/Parcel;I)V,public-api,system-api,test-api
 Landroid/ranging/oob/DeviceHandle$1;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,system-api,test-api
 Landroid/ranging/oob/DeviceHandle$1;->newArray(I)[Ljava/lang/Object;,public-api,system-api,test-api
@@ -408,6 +418,7 @@ Landroid/ranging/uwb/UwbRangingParams;->DURATION_1_MS:I,public-api,system-api,te
 Landroid/ranging/uwb/UwbRangingParams;->DURATION_2_MS:I,public-api,system-api,test-api
 Landroid/ranging/uwb/UwbRangingParams;->SUB_SESSION_UNDEFINED:I,public-api,system-api,test-api
 Landroid/ranging/uwb/UwbRangingParams;->describeContents()I,public-api,system-api,test-api
+Landroid/ranging/uwb/UwbRangingParams;->equals(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/uwb/UwbRangingParams;->getComplexChannel()Landroid/ranging/uwb/UwbComplexChannel;,public-api,system-api,test-api
 Landroid/ranging/uwb/UwbRangingParams;->getConfigId()I,public-api,system-api,test-api
 Landroid/ranging/uwb/UwbRangingParams;->getDeviceAddress()Landroid/ranging/uwb/UwbAddress;,public-api,system-api,test-api
@@ -418,6 +429,7 @@ Landroid/ranging/uwb/UwbRangingParams;->getSessionKeyInfo()[B,public-api,system-
 Landroid/ranging/uwb/UwbRangingParams;->getSlotDuration()I,public-api,system-api,test-api
 Landroid/ranging/uwb/UwbRangingParams;->getSubSessionId()I,public-api,system-api,test-api
 Landroid/ranging/uwb/UwbRangingParams;->getSubSessionKeyInfo()[B,public-api,system-api,test-api
+Landroid/ranging/uwb/UwbRangingParams;->hashCode()I,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/uwb/UwbRangingParams;->toString()Ljava/lang/String;,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/uwb/UwbRangingParams;->writeToParcel(Landroid/os/Parcel;I)V,public-api,system-api,test-api
 Landroid/ranging/wifi/rtt/RttRangingCapabilities$1;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,system-api,test-api
@@ -436,9 +448,11 @@ Landroid/ranging/wifi/rtt/RttRangingParams$Builder;->setPeriodicRangingHwFeature
 Landroid/ranging/wifi/rtt/RttRangingParams$Builder;->setRangingUpdateRate(I)Landroid/ranging/wifi/rtt/RttRangingParams$Builder;,public-api,system-api,test-api
 Landroid/ranging/wifi/rtt/RttRangingParams;->CREATOR:Landroid/os/Parcelable$Creator;,public-api,system-api,test-api
 Landroid/ranging/wifi/rtt/RttRangingParams;->describeContents()I,public-api,system-api,test-api
+Landroid/ranging/wifi/rtt/RttRangingParams;->equals(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/wifi/rtt/RttRangingParams;->getMatchFilter()[B,public-api,system-api,test-api
 Landroid/ranging/wifi/rtt/RttRangingParams;->getRangingUpdateRate()I,public-api,system-api,test-api
 Landroid/ranging/wifi/rtt/RttRangingParams;->getServiceName()Ljava/lang/String;,public-api,system-api,test-api
+Landroid/ranging/wifi/rtt/RttRangingParams;->hashCode()I,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/wifi/rtt/RttRangingParams;->isPeriodicRangingHwFeatureEnabled()Z,public-api,system-api,test-api
 Landroid/ranging/wifi/rtt/RttRangingParams;->toString()Ljava/lang/String;,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/wifi/rtt/RttRangingParams;->writeToParcel(Landroid/os/Parcel;I)V,public-api,system-api,test-api
