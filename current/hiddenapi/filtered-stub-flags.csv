@@ -303,6 +303,7 @@ Landroid/ranging/raw/RawInitiatorRangingConfig;->toString()Ljava/lang/String;,co
 Landroid/ranging/raw/RawInitiatorRangingConfig;->writeToParcel(Landroid/os/Parcel;I)V,public-api,system-api,test-api
 Landroid/ranging/raw/RawRangingDevice$1;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,system-api,test-api
 Landroid/ranging/raw/RawRangingDevice$1;->newArray(I)[Ljava/lang/Object;,public-api,system-api,test-api
+Landroid/ranging/raw/RawRangingDevice$Builder$$ExternalSyntheticLambda0;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/raw/RawRangingDevice$Builder;-><init>()V,public-api,system-api,test-api
 Landroid/ranging/raw/RawRangingDevice$Builder;->build()Landroid/ranging/raw/RawRangingDevice;,public-api,system-api,test-api
 Landroid/ranging/raw/RawRangingDevice$Builder;->setBleRssiRangingParams(Landroid/ranging/ble/rssi/BleRssiRangingParams;)Landroid/ranging/raw/RawRangingDevice$Builder;,public-api,system-api,test-api
