@@ -152,6 +152,7 @@ Landroid/ranging/RangingCapabilities;->getCsCapabilities()Landroid/ranging/ble/c
 Landroid/ranging/RangingCapabilities;->getRttRangingCapabilities()Landroid/ranging/wifi/rtt/RttRangingCapabilities;,public-api,system-api,test-api
 Landroid/ranging/RangingCapabilities;->getTechnologyAvailability()Ljava/util/Map;,public-api,system-api,test-api
 Landroid/ranging/RangingCapabilities;->getUwbCapabilities()Landroid/ranging/uwb/UwbRangingCapabilities;,public-api,system-api,test-api
+Landroid/ranging/RangingCapabilities;->getWifiPdRangingCapabilities()Landroid/ranging/wifi/pd/WifiPdRangingCapabilities;,public-api,system-api,test-api
 Landroid/ranging/RangingCapabilities;->toString()Ljava/lang/String;,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/RangingCapabilities;->writeToParcel(Landroid/os/Parcel;I)V,public-api,system-api,test-api
 Landroid/ranging/RangingConfig;-><init>()V,public-api,system-api,test-api
@@ -662,6 +663,7 @@ Landroid/ranging/wifi/pd/WifiPdRangingCapabilities;->getSupportedPasnModes()Ljav
 Landroid/ranging/wifi/pd/WifiPdRangingCapabilities;->getTechnology()I,public-api,system-api,test-api
 Landroid/ranging/wifi/pd/WifiPdRangingCapabilities;->is80211azNtbSupported()Z,public-api,system-api,test-api
 Landroid/ranging/wifi/pd/WifiPdRangingCapabilities;->is80211mcSupported()Z,public-api,system-api,test-api
+Landroid/ranging/wifi/pd/WifiPdRangingCapabilities;->toString()Ljava/lang/String;,core-platform-api,public-api,system-api,test-api
 Landroid/ranging/wifi/pd/WifiPdRangingCapabilities;->writeToParcel(Landroid/os/Parcel;I)V,public-api,system-api,test-api
 Landroid/ranging/wifi/pd/WifiPdRangingParams$1;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,system-api,test-api
 Landroid/ranging/wifi/pd/WifiPdRangingParams$1;->newArray(I)[Ljava/lang/Object;,public-api,system-api,test-api
